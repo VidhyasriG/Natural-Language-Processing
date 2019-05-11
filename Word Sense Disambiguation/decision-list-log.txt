@@ -1,0 +1,74 @@
+Script started on Thu Apr  4 23:54:14 2019
+[?1034h(mason) Rahuls-MBP:PA3 rahulpandey$ exitpython scorer.py my-line-answers.txt line-answers.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[25Phead -10 my-line-answers.txtpython scorer.py my-line-answers.txt line-answers.txt[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[Kpython decision-list.py line-train.xml line-test.xml my-decision-list.txt > my-line-answers.txt
+(mason) Rahuls-MBP:PA3 rahulpandey$ head -50 my-decision-list.txt
+5.768	telephone line	phone
+5.347	on the line	phone
+5.011	access line	phone
+4.605	of the line	phone
+4.500	car line	product
+4.382	end|line	phone
+4.248	's line	product
+4.094	computer line	product
+4.094	line was dead	phone
+4.094	came|line	phone
+4.094	PS/2 line	product
+4.094	a new line	product
+4.025	line of	product
+3.912	line|computers	product
+3.689	, the line	phone
+3.689	line of computers	product
+3.689	recently|line	product
+3.689	line|for	product
+3.689	line of personal	product
+3.689	product line	product
+3.689	line to the	phone
+3.689	direct line	phone
+3.689	introduced a line	product
+3.401	line growth	phone
+3.401	selling|line	product
+3.401	gab line	phone
+3.401	line increased	phone
+3.401	line , ''	product
+3.401	was|line	phone
+3.401	private telephone line	phone
+3.401	telephone access line	phone
+3.401	line through	product
+3.401	IBM line	product
+3.401	new IBM line	product
+3.401	line|products	product
+3.401	company|line	product
+3.401	trading line	phone
+3.401	sell|line	product
+3.401	new access line	phone
+3.401	IBM|line	product
+3.401	line grew	phone
+3.401	in|line	product
+3.401	's PS/2 line	product
+3.401	line went	phone
+3.401	line went dead	phone
+3.401	line of frozen	product
+3.401	introduced|line	product
+3.401	through|line	phone
+3.401	line in service	phone
+3.401	Inc.|line	product
+(mason) Rahuls-MBP:PA3 rahulpandey$ head -10 my-line-answers.txt
+<answer instance='line-n.w8_059:8174:' senseid='phone'/>
+<answer instance='line-n.w7_098:12684:' senseid='product'/>
+<answer instance='line-n.w8_106:13309:' senseid='phone'/>
+<answer instance='line-n.w9_40:10187:' senseid='phone'/>
+<answer instance='line-n.w9_16:217:' senseid='product'/>
+<answer instance='line-n.w8_119:16927:' senseid='product'/>
+<answer instance='line-n.w8_008:13756:' senseid='phone'/>
+<answer instance='line-n.w8_041:15186:' senseid='phone'/>
+<answer instance='line-n.art7} aphb 05601797:' senseid='phone'/>
+<answer instance='line-n.w8_119:2964:' senseid='phone'/>
+(mason) Rahuls-MBP:PA3 rahulpandey$ python scorer.py my-line-answers.txt line-answers.txt
+['product', 'phone']
+	product	phone
+product	66.000	6.000
+phone	8.000	46.000
+accuracy score=88.889%
+(mason) Rahuls-MBP:PA3 rahulpandey$ exit
+exit
+
+Script done on Thu Apr  4 23:54:38 2019
